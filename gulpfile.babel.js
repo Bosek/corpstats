@@ -28,9 +28,11 @@ gulp.task('start', ['node'], () => {
   });
 });
 
-gulp.task('test', ['mocha'], () => {
+gulp.task('testwatcher', ['mocha'], () => {
   gulp.watch(['./src/**/test/*'], ['mocha']);
 });
+
+gulp.task('test', ['mocha']);
 
 // Default task to start development. Just type gulp.
 gulp.task('default', ['start']);
