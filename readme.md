@@ -8,3 +8,7 @@ The only production dependency is `node-fetch`.
 ## Install
 
 `npm install corpstats --save`
+
+## Usage
+
+[Basic usage example](https://tonicdev.com/bosek/corpstats-basic-usage)
