@@ -6,7 +6,6 @@
     "Tomas Bosek"
   ],
   "description": "Tool for pulling stat data from zKillboard.",
-  "private": true,
   "scripts": {
     "test": "gulp test",
     "compile": "gulp compile",
