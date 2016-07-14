@@ -1,0 +1,242 @@
+{
+  "killID": 53987265,
+  "solarSystemID": 30001158,
+  "killTime": "2016-05-14 18:42:00",
+  "moonID": 0,
+  "victim": {
+    "shipTypeID": 11178,
+    "characterID": 1985715410,
+    "characterName": "Frostwind WK2",
+    "corporationID": 955058602,
+    "corporationName": "German Angels",
+    "allianceID": 99000614,
+    "allianceName": "The Unthinkables",
+    "factionID": 0,
+    "factionName": "",
+    "damageTaken": 2623
+  },
+  "attackers": [
+    {
+      "characterID": 262460645,
+      "characterName": "Altair IbnLaAhad",
+      "corporationID": 583616018,
+      "corporationName": "Black Aces",
+      "allianceID": 99005677,
+      "allianceName": "I N F A M O U S",
+      "factionID": 0,
+      "factionName": "",
+      "securityStatus": 2,
+      "damageDone": 1425,
+      "finalBlow": 0,
+      "weaponTypeID": 34562,
+      "shipTypeID": 34562
+    },
+    {
+      "characterID": 95356997,
+      "characterName": "Bambarbia Kergudu",
+      "corporationID": 98326373,
+      "corporationName": "H..Y..D..R..A.",
+      "allianceID": 99004779,
+      "allianceName": "Soviet-Union",
+      "factionID": 0,
+      "factionName": "",
+      "securityStatus": 2.1,
+      "damageDone": 1034,
+      "finalBlow": 1,
+      "weaponTypeID": 2977,
+      "shipTypeID": 34562
+    },
+    {
+      "characterID": 1870557108,
+      "characterName": "Crekkan",
+      "corporationID": 98099230,
+      "corporationName": "An My",
+      "allianceID": 99005677,
+      "allianceName": "I N F A M O U S",
+      "factionID": 0,
+      "factionName": "",
+      "securityStatus": -0.3,
+      "damageDone": 89,
+      "finalBlow": 0,
+      "weaponTypeID": 11198,
+      "shipTypeID": 11198
+    },
+    {
+      "characterID": 532772603,
+      "characterName": "Roxaholic",
+      "corporationID": 98099230,
+      "corporationName": "An My",
+      "allianceID": 99005677,
+      "allianceName": "I N F A M O U S",
+      "factionID": 0,
+      "factionName": "",
+      "securityStatus": 3.1,
+      "damageDone": 75,
+      "finalBlow": 0,
+      "weaponTypeID": 27371,
+      "shipTypeID": 11176
+    },
+    {
+      "characterID": 95219528,
+      "characterName": "Esterad",
+      "corporationID": 98326373,
+      "corporationName": "H..Y..D..R..A.",
+      "allianceID": 99004779,
+      "allianceName": "Soviet-Union",
+      "factionID": 0,
+      "factionName": "",
+      "securityStatus": 5,
+      "damageDone": 0,
+      "finalBlow": 0,
+      "weaponTypeID": 2889,
+      "shipTypeID": 11196
+    },
+    {
+      "characterID": 91236040,
+      "characterName": "Anubis Divinity",
+      "corporationID": 98326373,
+      "corporationName": "H..Y..D..R..A.",
+      "allianceID": 99004779,
+      "allianceName": "Soviet-Union",
+      "factionID": 0,
+      "factionName": "",
+      "securityStatus": 2.3,
+      "damageDone": 0,
+      "finalBlow": 0,
+      "weaponTypeID": 3244,
+      "shipTypeID": 11186
+    }
+  ],
+  "items": [
+    {
+      "typeID": 3074,
+      "flag": 29,
+      "qtyDropped": 1,
+      "qtyDestroyed": 0,
+      "singleton": 0
+    },
+    {
+      "typeID": 3244,
+      "flag": 22,
+      "qtyDropped": 1,
+      "qtyDestroyed": 0,
+      "singleton": 0
+    },
+    {
+      "typeID": 23009,
+      "flag": 27,
+      "qtyDropped": 40,
+      "qtyDestroyed": 0,
+      "singleton": 0
+    },
+    {
+      "typeID": 29009,
+      "flag": 20,
+      "qtyDropped": 0,
+      "qtyDestroyed": 1,
+      "singleton": 0
+    },
+    {
+      "typeID": 5973,
+      "flag": 19,
+      "qtyDropped": 0,
+      "qtyDestroyed": 1,
+      "singleton": 0
+    },
+    {
+      "typeID": 8517,
+      "flag": 21,
+      "qtyDropped": 1,
+      "qtyDestroyed": 0,
+      "singleton": 0
+    },
+    {
+      "typeID": 2605,
+      "flag": 11,
+      "qtyDropped": 1,
+      "qtyDestroyed": 0,
+      "singleton": 0
+    },
+    {
+      "typeID": 31177,
+      "flag": 92,
+      "qtyDropped": 0,
+      "qtyDestroyed": 1,
+      "singleton": 0
+    },
+    {
+      "typeID": 4254,
+      "flag": 12,
+      "qtyDropped": 0,
+      "qtyDestroyed": 1,
+      "singleton": 0
+    },
+    {
+      "typeID": 3074,
+      "flag": 27,
+      "qtyDropped": 0,
+      "qtyDestroyed": 1,
+      "singleton": 0
+    },
+    {
+      "typeID": 31177,
+      "flag": 93,
+      "qtyDropped": 0,
+      "qtyDestroyed": 1,
+      "singleton": 0
+    },
+    {
+      "typeID": 23009,
+      "flag": 29,
+      "qtyDropped": 40,
+      "qtyDestroyed": 0,
+      "singleton": 0
+    },
+    {
+      "typeID": 1405,
+      "flag": 13,
+      "qtyDropped": 1,
+      "qtyDestroyed": 0,
+      "singleton": 0
+    },
+    {
+      "typeID": 3074,
+      "flag": 28,
+      "qtyDropped": 1,
+      "qtyDestroyed": 0,
+      "singleton": 0
+    },
+    {
+      "typeID": 23009,
+      "flag": 28,
+      "qtyDropped": 40,
+      "qtyDestroyed": 0,
+      "singleton": 0
+    },
+    {
+      "typeID": 23009,
+      "flag": 5,
+      "qtyDropped": 0,
+      "qtyDestroyed": 305,
+      "singleton": 0
+    },
+    {
+      "typeID": 1952,
+      "flag": 20,
+      "qtyDropped": 1,
+      "qtyDestroyed": 0,
+      "singleton": 0
+    }
+  ],
+  "position": {
+    "y": -52586875425.239,
+    "x": 1100174000743.3,
+    "z": -1949302583758.7
+  },
+  "zkb": {
+    "locationID": 50001319,
+    "hash": "b4428842b7719e18a34b6b047ce225b34e7129b6",
+    "totalValue": 32779249.69,
+    "points": 1
+  }
+}

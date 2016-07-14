@@ -1,0 +1,42 @@
+{
+  "name": "corpstats",
+  "main": "dist/index.js",
+  "version": "0.1.0",
+  "authors": [
+    "Tomas Bosek"
+  ],
+  "description": "Tool for pulling stat data from zKillboard.",
+  "private": true,
+  "scripts": {
+    "test": "gulp test",
+    "compile": "gulp compile",
+    "prepublish": "npm run compile"
+  },
+  "engines": {
+    "node": ">=5"
+  },
+  "dependencies": {
+    "node-fetch": "^1.5.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.8.0",
+    "babel-core": "^6.8.0",
+    "babel-eslint": "^6.0.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "babel-preset-stage-3": "^6.5.0",
+    "chai": "^3.5.0",
+    "eslint": "^2.10.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-import": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-bg": "^0.0.8",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-watch": "^4.3.5",
+    "mocha": "^2.4.5",
+    "run-sequence": "^1.1.5"
+  }
+}
