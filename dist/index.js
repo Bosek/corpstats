@@ -57,7 +57,7 @@ exports.default = {
 };
 
 /*
-Pull()(ZKill.Kills.Character(charID, year, month)).then(data).catch(error));
+Pull()(ZKill.Character(charID).Kills(year, month)).then(data).catch(error));
 */
 
 module.exports = exports['default'];

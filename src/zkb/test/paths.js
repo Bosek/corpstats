@@ -3,41 +3,40 @@ const assert = chai.assert;
 import paths from '../paths';
 
 
-const charId = 888;
+const id = 888;
 const year = 2016;
 const month = 7;
 const page = 5;
 
-describe('Kills', () => {
-  describe('Alliance', () =>
+describe('Alliance', () => {
+  describe('Kills', () =>
     it('should create relative url', () =>
-      assert.equal(paths.Kills.Alliance(charId, year, month)(page - 1),
-        `kills/allianceID/${charId}/year/${year}/month/${month}/page/${page}/`)));
-
-  describe('Character', () =>
-    it('should create relative url', () =>
-      assert.equal(paths.Kills.Character(charId, year, month)(page - 1),
-        `kills/characterID/${charId}/year/${year}/month/${month}/page/${page}/`)));
-
-  describe('Corporation', () =>
-    it('should create relative url', () =>
-      assert.equal(paths.Kills.Corporation(charId, year, month)(page - 1),
-        `kills/corporationID/${charId}/year/${year}/month/${month}/page/${page}/`)));
+      assert.equal(paths.Alliance(id).Kills(year, month)(page - 1),
+        `kills/allianceID/${id}/year/${year}/month/${month}/page/${page}/`)));
+  describe('Losses', () =>
+      it('should create relative url', () =>
+        assert.equal(paths.Alliance(id).Losses(year, month)(page - 1),
+          `losses/allianceID/${id}/year/${year}/month/${month}/page/${page}/`)));
 });
 
-describe('Losses', () => {
-  describe('Alliance', () =>
+describe('Character', () => {
+  describe('Kills', () =>
     it('should create relative url', () =>
-      assert.equal(paths.Losses.Alliance(charId, year, month)(page - 1),
-        `losses/allianceID/${charId}/year/${year}/month/${month}/page/${page}/`)));
+      assert.equal(paths.Character(id).Kills(year, month)(page - 1),
+        `kills/characterID/${id}/year/${year}/month/${month}/page/${page}/`)));
+  describe('Losses', () =>
+      it('should create relative url', () =>
+        assert.equal(paths.Character(id).Losses(year, month)(page - 1),
+          `losses/characterID/${id}/year/${year}/month/${month}/page/${page}/`)));
+});
 
-  describe('Character', () =>
+describe('Corporation', () => {
+  describe('Kills', () =>
     it('should create relative url', () =>
-      assert.equal(paths.Losses.Character(charId, year, month)(page - 1),
-        `losses/characterID/${charId}/year/${year}/month/${month}/page/${page}/`)));
-
-  describe('Corporation', () =>
-    it('should create relative url', () =>
-      assert.equal(paths.Losses.Corporation(charId, year, month)(page - 1),
-        `losses/corporationID/${charId}/year/${year}/month/${month}/page/${page}/`)));
+      assert.equal(paths.Corporation(id).Kills(year, month)(page - 1),
+        `kills/corporationID/${id}/year/${year}/month/${month}/page/${page}/`)));
+  describe('Losses', () =>
+      it('should create relative url', () =>
+        assert.equal(paths.Corporation(id).Losses(year, month)(page - 1),
+          `losses/corporationID/${id}/year/${year}/month/${month}/page/${page}/`)));
 });

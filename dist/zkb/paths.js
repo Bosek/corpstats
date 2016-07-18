@@ -28,16 +28,25 @@ function getPath(sub, sub2, id, year, month, page) {
   return url;
 }
 
+/* eslint-disable arrow-body-style */
 exports.default = {
-  Kills: {
-    Alliance: (id, year, month) => page => getPath('kills', 'allianceID', id, year, month, page),
-    Character: (id, year, month) => page => getPath('kills', 'characterID', id, year, month, page),
-    Corporation: (id, year, month) => page => getPath('kills', 'corporationID', id, year, month, page)
+  Alliance: id => {
+    return {
+      Kills: (year, month) => page => getPath('kills', 'allianceID', id, year, month, page),
+      Losses: (year, month) => page => getPath('losses', 'allianceID', id, year, month, page)
+    };
   },
-  Losses: {
-    Alliance: (id, year, month) => page => getPath('losses', 'allianceID', id, year, month, page),
-    Character: (id, year, month) => page => getPath('losses', 'characterID', id, year, month, page),
-    Corporation: (id, year, month) => page => getPath('losses', 'corporationID', id, year, month, page)
+  Character: id => {
+    return {
+      Kills: (year, month) => page => getPath('kills', 'characterID', id, year, month, page),
+      Losses: (year, month) => page => getPath('losses', 'characterID', id, year, month, page)
+    };
+  },
+  Corporation: id => {
+    return {
+      Kills: (year, month) => page => getPath('kills', 'corporationID', id, year, month, page),
+      Losses: (year, month) => page => getPath('losses', 'corporationID', id, year, month, page)
+    };
   }
 };
 module.exports = exports['default'];
