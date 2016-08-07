@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "compile": "gulp compile",
+    "compile": "gulp clean build",
     "prepublish": "npm run compile"
   },
   "engines": {
