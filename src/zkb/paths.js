@@ -1,3 +1,5 @@
+import Kill from './models/kill';
+
 function chainIDs(id) {
   if (Array.isArray(id)) {
     id = id.join(',');
@@ -7,9 +9,6 @@ function chainIDs(id) {
 
 function getPath(sub, sub2, id, year, month, page) {
   let url = `${sub}/${sub2}/${chainIDs(id)}/`;
-
-  // Default page for ZKillboard is 1
-  page++;
 
   if (year) {
     url += `year/${year}/`;
@@ -27,20 +26,41 @@ function getPath(sub, sub2, id, year, month, page) {
 export default {
   Alliance: id => {
     return {
-      Kills: (year, month) => page => getPath('kills', 'allianceID', id, year, month, page),
-      Losses: (year, month) => page => getPath('losses', 'allianceID', id, year, month, page),
+      Kills: (year, month) => page => {
+        return {
+          URL: getPath('kills', 'allianceID', id, year, month, page),
+          Model: Kill,
+        };
+      },
+      Losses: () => {
+        throw new Error('Not yet implemented.');
+      },
     };
   },
   Character: id => {
     return {
-      Kills: (year, month) => page => getPath('kills', 'characterID', id, year, month, page),
-      Losses: (year, month) => page => getPath('losses', 'characterID', id, year, month, page),
+      Kills: (year, month) => page => {
+        return {
+          URL: getPath('kills', 'characterID', id, year, month, page),
+          Model: Kill,
+        };
+      },
+      Losses: () => {
+        throw new Error('Not yet implemented.');
+      },
     };
   },
   Corporation: id => {
     return {
-      Kills: (year, month) => page => getPath('kills', 'corporationID', id, year, month, page),
-      Losses: (year, month) => page => getPath('losses', 'corporationID', id, year, month, page),
+      Kills: (year, month) => page => {
+        return {
+          URL: getPath('kills', 'corporationID', id, year, month, page),
+          Model: Kill,
+        };
+      },
+      Losses: () => {
+        throw new Error('Not yet implemented.');
+      },
     };
   },
 };

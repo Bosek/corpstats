@@ -6,9 +6,9 @@ export default class Victim {
   constructor(object) {
     object = keysToLowerCase(object);
 
+    this.Alliance = new models.Alliance(prefixToArray('alliance', object));
     this.Character = new models.Character(prefixToArray('character', object));
     this.Corporation = new models.Corporation(prefixToArray('corporation', object));
-    this.Alliance = new models.Alliance(prefixToArray('alliance', object));
     this.Faction = new models.Faction(prefixToArray('faction', object));
 
     this.DamageTaken = object.damagetaken;

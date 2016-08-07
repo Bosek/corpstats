@@ -11,6 +11,7 @@ import paths from './zkb/paths';
 
 export default {
   Alliance: Alliance,
+  API: paths,
   Attacker: Attacker,
   Character: Character,
   Corporation: Corporation,
@@ -22,9 +23,4 @@ export default {
   Pull: fetchData,
   Victim: Victim,
   ZKB: ZKB,
-  ZKill: paths,
 };
-
-/*
-Pull()(ZKill.Character(charID).Kills(year, month)).then(data).catch(error));
-*/

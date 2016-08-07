@@ -18,8 +18,8 @@ export default class Kill {
     this.ZKB = new ZKB(object.zkb);
 
     this.KillID = object.killid;
-    this.SolarSystemID = object.solarsystemid;
     this.KillTime = object.killtime;
     this.MoonID = object.moonid;
+    this.SolarSystemID = object.solarsystemid;
   }
 }

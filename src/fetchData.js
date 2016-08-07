@@ -6,11 +6,18 @@ async function fetchData(path, options = {}) {
 
   let lastLength = 0;
   let objects = [];
-  let page = 0;
+  let page = options.startPage;
   do {
-    const response = await fetch(options.apiUrl + path(page), options.userAgent)
+    const obj = path(page);
+    const url = options.apiUrl + obj.URL;
+
+    if (options.debug) {
+      console.log(url);
+    }
+
+    const response = await fetch(url, options.userAgent)
     .then(response => response.json())
-    .then(response => response);
+    .then(response => response.map((item) => new obj.Model(item)));
 
     if (!response) {
       break;
@@ -25,6 +32,6 @@ async function fetchData(path, options = {}) {
   return objects;
 }
 
-export default options => path => new Promise(resolve => {
+export default (path, options) => new Promise(resolve => {
   resolve(fetchData(path, options || {}));
 });
